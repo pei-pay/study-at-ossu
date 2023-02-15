@@ -15,3 +15,21 @@
 
 ;; Template rules used:
 ;;  - atomic non-distinct: Natural(1,32)
+
+
+;; Functions:
+
+;; SeatNum -> Boolean
+;; produce true if the given seat number is on the aisle
+
+(check-expect (aisle?  1) true)
+(check-expect (aisle? 16) false)
+(check-expect (aisle? 32) true)
+
+; (define (aisle? sn) false) ;stub
+
+
+; <use template from SeatNum>
+(define (aisle? sn)
+  (or (= sn 1)
+      (= sn 32)))
