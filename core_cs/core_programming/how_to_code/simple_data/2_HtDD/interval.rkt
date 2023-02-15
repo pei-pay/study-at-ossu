@@ -13,5 +13,5 @@
   )
 
 
-;; Template rules are used:
+;; Template rules used:
 ;;  - atomic non-distinct: Natural(1,32)
